@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+
+:root{
+    --main-dore:#d49b41;
+    --second-dore: #f1d766;
+    --main-grey:#d3d0ca;
+    --second-grey:#887e7a;
+}
+
+ 
+body{
+    color: white;
+    background-color: #171118;
+
+}
+/*----section moi----*/
+#section-moi{
+    padding-top: 5em;
+    height: 606px;
+    background-image: url(https://cdn.dribbble.com/users/416610/screenshots/4801105/coding_desk_flat_vector_ui_ux_design_illustration_motion_animation_gif2.gif);
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+}
+.moi{
+    color: var(--second-grey);
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    color: var(--main-dore);
+}
+.moi h1{
+    font-size: 8rem;
+    
+}
+.moi h1 #move{
+    padding-left: .7em;
+}
+.moi h2{
+    align-self: flex-end;
+    padding-right: 2em;
+    font-size: 2rem;
+}
+.moi-txt{
+    padding-top: 8em;
+    color: var(--main-grey);
+}
+.moi-txt a{
+    color: var(--main-dore);
+}
+/*----section moi----*/
+/*----header section----*/
+header{
+    width: 90%;
+    margin: 0% auto;
+    height: 100px;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: #1f202c;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: var(--second-grey);
+
+}
+.logo img{
+    height: 100px;
+}
+.menuit{
+    width: 60%;
+}
+.menuit ul{
+ display: flex;
+ justify-content: space-between;
+
+}
+
+header .menuit ul li{
+ list-style-type: none;
+ text-transform: uppercase;
+}
+header .menuit ul li a{
+    text-decoration: none;
+    color: var(--main-dore);
+
+}
+header .menuit ul li a:hover{
+    color: var(--second-grey);
+}
+header .menuit ul li:last-child a{
+    border: .2em solid  var(--second-grey);
+    padding: .4em .3em;
+    
+    }
+/*----section one----*/
+section{
+        width: 90%;
+        margin: 0% auto;
+        height: 500px;
+        margin-bottom: 10em;
+        padding: 7em 0;
+    }
+#réalisation .nrml{
+    padding:1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#réalisation .nrml h1{
+    color: var(--second-grey);
+    text-transform: uppercase;
+    padding: 1em;
+}
+#réalisation .nrml h3{
+    color: var(--second-grey);
+}
+
+
+#réalisation .grid {
+    padding: 1.5em 1em;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 10em 10em 10em;
+    grid-gap: 1em;
+}
+#réalisation .grid img {
+    width: 100%;
+    height: 100%;
+    border: .1em solid var(--main-dore) ;
+}
+
+/*----section presentation----*/
+.pre{
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pre h1{
+    color: var(--main-dore);
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+.pre p{
+    padding-top: 1em;
+    color: var(--second-grey);
+    font-weight: bolder;
+}
+.pre-txt{
+    padding: 2em 16em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--main-grey);
+    font-size: 1.2rem;
+}
+.pre-txt a{
+    color: var(--main-dore);
+}
+/*----section parcours----*/
+#parcour{
+    display: flex;
+    flex-direction: column;
+    color: var(--main-grey);
+
+}
+.monparc-logo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+.monparc-logo .row{
+    padding: .8em;
+    background-color: #242735;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 48%;
+}
+.monparc-logo .row i{
+    font-size: 5rem;
+    color: #171118;
+}
+.monparc-logo .row h1{
+    color: var(--main-dore) ;
+    font-size: 1.2rem;
+
+}
+.monparc-logo .comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.monparc-logo .comp p{
+    color: var(--main-dore);
+    font-weight: bolder;
+    padding-top: 1em;
+}
+.monparc{
+    padding-top: 3em;
+    display: grid;
+    grid-template-rows: 6em 6em  auto ; /*repeat(4,300)*/
+    grid-template-columns: .8fr 1.8fr 2fr  ;
+    grid-gap: 1em;
+    
+}
+.monparc .date{
+    padding: .8em;
+    background-color: #242735;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 48%;
+}
+.monparc .diplome{
+    padding: .3em;
+    background-color: #242735;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:4%;
+}
+.comp-list{
+    background-color: ;
+}
+.progress-skill-bar{
+    margin-bottom:.2em ;
+    background-color: var(--main-grey);
+    height: 2em;
+}
+.progress-bar{
+    background-color: #242735;
+    height: 100%;
+}
+
+
+.skill{
+    color: var(--main-dore);
+    display: flex;
+    justify-content: space-between;
+    padding: .5em .5em;
+}
+/*----section contacte me----*/
+#contact .con {
+    text-align: center;
+    color: var(--main-grey);
+}
+#contact .con h1{
+    color: var(--main-dore);
+    font-size: xx-large;
+}
+#contact .con p{
+    color: var(--main-grey);
+    font-weight: bolder;
+}
+#contact .con-map {
+    padding-top: 1em;
+}
+#contact .con-map .con-map-par{
+   text-transform: uppercase;
+   text-align: center;
+   color: var(--second-grey);
+}
+#contact .con-map .con-map-colm{
+display: grid;
+grid-template-columns: 1FR 1FR 1FR;
+padding-top: 1em;
+}
+#contact .con-map .con-map-colm #cl1 .ateh{
+ width: 100%;
+margin-bottom: 1em;
+color: var(--main-grey);
+border:.1em solid ##1f202c;
+
+}
+#contact .con-map .con-map-colm #cl1 .ateh i{
+    color: var(--main-dore);
+}
+#contact .con-map .con-map-colm #cl1 .ateh h4{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+#cl3 form .input-con,textarea{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.input-it,textarea{
+    background-color: var(--main-grey);
+}
+/*textarea{
+    margin-left: 4em;
+    width: 85%;
+}*/
+#cl3 form .input-con .input-it{
+    width: 100%;
+}
+
+#cl3 form .input-con .fa-solid,.fa-regular{
+    padding: 1em;
+    background-color: #1f202c;
+    color: var(--main-dore);
+}
+.fa-comments{
+    height: 4.2em;
+    
+}
+#cl3 form .input-con .btn{
+    background-color: #1f202c;
+    color: var(--main-dore);
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
